@@ -76,17 +76,13 @@
 				"clearControlAggregation": false
 			},
 			"routes": [{
-				"name": "RouteApp",
-				"pattern": "RouteApp",
-				"target": ["TargetApp"]
+				"pattern": "",
+				"name": "start",
+				"target": ["TargetStartView"]
 			}],
 			"targets": {
-				"TargetApp": {
-					"viewType": "XML",
-					"transition": "slide",
-					"clearControlAggregation": false,
-					"viewId": "App",
-					"viewName": "App"
+				"TargetStartView": {
+					"viewName": "StartView"
 				}
 			}
 		}
