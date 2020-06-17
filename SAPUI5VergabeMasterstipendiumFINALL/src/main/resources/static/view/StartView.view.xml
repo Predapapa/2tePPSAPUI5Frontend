@@ -5,26 +5,25 @@
 		<App id="app">
 			<l:HorizontalLayout class="sapUiContentPadding" >
 			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Ausbildungsabteilung"
-				subheader="App für verantwortlichen Mitarbeiter Ausbildungsabteilung" press="press">
+				 press="press" width="100%">
 				<TileContent>
 					<ImageContent src="sap-icon://course-book" />
 				</TileContent>
 			</GenericTile>
 
 			<GenericTile header="Ausbilder" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
-				subheader="App für Ausbilder" press="press2">
+				 press="press2" width="100%">
 				<TileContent>
 					<ImageContent src="sap-icon://course-book" />
 				</TileContent>
 			</GenericTile>
 			
 			<GenericTile header="Alignment-Meeting" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
-				subheader="App für Alignment-Meeting" press="press2">
+				 press="press2" width="100%">
 				<TileContent>
 					<ImageContent src="sap-icon://course-book" />
 				</TileContent>
 			</GenericTile>
-			
 			</l:HorizontalLayout>
 		</App>
 		</Shell>

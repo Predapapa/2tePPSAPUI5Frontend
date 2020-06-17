@@ -79,10 +79,22 @@
 				"pattern": "",
 				"name": "start",
 				"target": ["TargetStartView"]
-			}],
+			},
+			{
+				"name": "ausbildungsabteilungView",
+				"pattern": "RouteAusbildungsabteilungView",
+				"target": ["TargetAusbildungsabteilungView"]
+				}],
 			"targets": {
 				"TargetStartView": {
 					"viewName": "StartView"
+				},
+				"TargetAusbildungsabteilungView": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "AusbildungsabteilungView",
+					"viewName": "AusbildungsabteilungView"
 				}
 			}
 		}

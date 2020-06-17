@@ -1,0 +1,42 @@
+<mvc:View controllerName="com.sap.masterstipendium.SAPUI5VergabeMasterstipendiumFrontEnd.controller.AusbildungsabteilungView" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout">
+	<App>
+		<pages>
+				<Page id="page" title="{Eintragen von Bewerbern}" showNavButton="true" navButtonPress=".onNavBack">
+					<content>
+						<l:HorizontalLayout class="sapUiContentPadding" >
+			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="WI" subheader="Wirtschaftsinformatik"
+				 press="press" width="100%">
+				<TileContent>
+					<ImageContent src="sap-icon://course-book" />
+				</TileContent>
+			</GenericTile>
+
+			<GenericTile header="AI" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" subheader="Angewandte Informatik"
+				 press="press2" width="100%">
+				<TileContent>
+					<ImageContent src="sap-icon://course-book" />
+				</TileContent>
+			</GenericTile>
+			
+			<GenericTile header="DM" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" subheader="Digitale Medien"
+				 press="press3" width="100%">
+				<TileContent>
+					<ImageContent src="sap-icon://course-book" />
+				</TileContent>
+			</GenericTile>
+			
+			<GenericTile header="BWL" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" subheader="Betriebswirtschaftslehre"
+				 press="press4" width="100%">
+				<TileContent>
+					<ImageContent src="sap-icon://course-book" />
+				</TileContent>
+			</GenericTile>
+			</l:HorizontalLayout>
+						
+					</content>
+				</Page>
+			</pages>
+		</App>
+		
+</mvc:View>
