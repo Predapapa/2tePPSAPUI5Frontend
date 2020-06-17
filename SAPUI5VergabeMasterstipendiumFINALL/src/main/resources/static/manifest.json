@@ -12,7 +12,21 @@
 		"sourceTemplate": {
 			"id": "ui5template.basicSAPUI5ApplicationProject",
 			"version": "1.40.12"
-		}
+		},
+		"dataSources": {
+   			"studentDataSource": {
+      			"uri": "api/v1/get/Jürgen Traugott",
+      			"type": "JSON",
+      			"settings": {
+      }
+      },
+	  		"applicationStudentData": {
+      			"uri": "model/applicationStudentData.json",
+      			"type": "JSON",
+      			"settings": {
+      }
+	  }
+	  }	
 	},
 
 	"sap.ui": {
@@ -58,7 +72,20 @@
 				"settings": {
 					"bundleName": "com.sap.masterstipendium.SAPUI5VergabeMasterstipendiumFrontEnd.i18n.i18n"
 				}
-			}
+			},
+				"": {
+				"dataSource" : "studentDataSource",
+				"settings": {
+					"defaultBindingMode" : "TwoWay"
+				}
+			},
+			"applicationStudentModel": {
+				"dataSource" : "applicationStudentData",
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {
+					"defaultBindingMode": "TwoWay"
+				}
+				}
 		},
 		"resources": {
 			"css": [{
@@ -82,8 +109,12 @@
 			},
 			{
 				"name": "ausbildungsabteilungView",
-				"pattern": "RouteAusbildungsabteilungView",
+				"pattern": "Ausbildungsabteilung",
 				"target": ["TargetAusbildungsabteilungView"]
+				},
+			{	"name": "wistudentanlegenView",
+				"pattern": "WiStudent",
+				"target": ["TargetWiStudentAnlegenView"]
 				}],
 			"targets": {
 				"TargetStartView": {
@@ -95,6 +126,13 @@
 					"clearControlAggregation": false,
 					"viewId": "AusbildungsabteilungView",
 					"viewName": "AusbildungsabteilungView"
+				},
+				"TargetWiStudentAnlegenView": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "WiStudentAnlegenView",
+					"viewName": "WiStudentAnlegenView"
 				}
 			}
 		}

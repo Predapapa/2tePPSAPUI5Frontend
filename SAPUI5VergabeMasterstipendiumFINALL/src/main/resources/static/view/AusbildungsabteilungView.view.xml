@@ -2,7 +2,7 @@
 	displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout">
 	<App>
 		<pages>
-				<Page id="page" title="{Eintragen von Bewerbern}" showNavButton="true" navButtonPress=".onNavBack">
+				<Page id="page" title="Eintragen von Bewerbern" showNavButton="true" navButtonPress=".onNavBack">
 					<content>
 						<l:HorizontalLayout class="sapUiContentPadding" >
 			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="WI" subheader="Wirtschaftsinformatik"

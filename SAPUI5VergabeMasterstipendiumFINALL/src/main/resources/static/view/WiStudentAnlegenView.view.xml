@@ -1,0 +1,94 @@
+<mvc:View controllerName="com.sap.masterstipendium.SAPUI5VergabeMasterstipendiumFrontEnd.controller.WiStudentAnlegenView" 
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" 
+	xmlns="sap.m" 
+	xmlns:l="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form">
+	
+	<App>
+		<pages>
+				<Page id="page2" title="WI Studierenden anlegen" showNavButton="true" navButtonPress=".onNavBack">
+					<content>
+						
+						
+			
+			<form:SimpleForm editable="true">
+				<Label text="I-User" tooltip="I-User"/>
+				<Input
+				id="iuser"
+				value="{applicationStudentModel>/iuser}"
+				placeholder="I-User eingeben"
+				width="300px"
+				fieldWidth="200px" />
+
+				<Label text="Vorname" tooltip="Vorname"/>
+				<Input
+				id="fname"
+				value="{applicationStudentModel>/fname}"
+				placeholder="Vorname"
+				width="300px"
+				fieldWidth="200px"/>
+
+				<Label text="Nachname" tooltip="Nachname"/>
+				<Input
+				id="lname"
+				value="{applicationStudentModel>/lname}"
+				placeholder="Nachname"
+				width="300px"
+				fieldWidth="200px"/>
+
+				<Label text="Studiengang" tooltip="Studiengang"/>
+				<Input
+				enabled="false"
+				value="WI"
+				id="cofstudy"
+				width="300px"
+				fieldWidth="200px"/>
+
+				<Label text="Kurs" tooltip="Kurs"/>
+				<Input
+				id="course"
+				value="{applicationStudentModel>/course}"
+				placeholder="Kurs"
+				width="300px"
+				fieldWidth="200px" />
+
+				<Label text="Ausbilder" tooltip="Ausbilder"/>
+				<Input
+				id="trainer"
+				value="{applicationStudentModel>/trainer}"
+				placeholder="Ausbilder"
+				width="300px"
+				fieldWidth="200px" />
+
+				
+				
+			</form:SimpleForm>
+						
+					</content>
+					
+		<footer>
+			<OverflowToolbar id="otbFooter">
+				<ToolbarSpacer/>
+				<Button text="Speichern" press=".onSave">
+					<layoutData><OverflowToolbarLayoutData priority="NeverOverflow" /></layoutData>
+				</Button>
+				<Button text="Abbrechen" press=".onReject">
+					<layoutData><OverflowToolbarLayoutData priority="NeverOverflow" /></layoutData>
+				</Button>
+			</OverflowToolbar>
+		
+		</footer>
+				</Page>
+			</pages>
+		</App>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</mvc:View>
