@@ -1,0 +1,43 @@
+<mvc:View controllerName="com.sap.masterstipendium.SAPUI5VergabeMasterstipendiumFrontEnd.controller.StudentFormView" 
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" 
+	xmlns="sap.m" 
+	xmlns:l="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form">
+	
+	<App>
+		<pages>
+				<Page id="page2" title="Informationen ergänzen und Leistung beurteilen" showNavButton="true" navButtonPress=".onNavBack">
+					<content>
+						
+						<ObjectHeader 	binding="{/}"  icon="sap-icon://employee" intro="{iuser}" title="{fname} {lname}" class="sapUiResponsivePadding--header" >
+		
+							<ObjectAttribute text="Studiengang: {cofStudy}" />
+							<ObjectAttribute text="Kurs: {course}" />
+							<ObjectAttribute text="Ausbilder: {trainer}" />
+						
+						</ObjectHeader>
+						
+						<List icon="sap-icon://performance" headerText="Leistung in der Praxisphase" >
+							<InputListItem label="WLAN">
+								<Switch state="true" />
+							</InputListItem>
+						</List>
+						
+						
+					</content>
+		<footer>
+			<OverflowToolbar id="otbFooter">
+				<ToolbarSpacer/>
+				<Button text="Speichern" press=".onSave">
+					<layoutData><OverflowToolbarLayoutData priority="NeverOverflow" /></layoutData>
+				</Button>
+				<Button text="Abbrechen" press=".onReject">
+					<layoutData><OverflowToolbarLayoutData priority="NeverOverflow" /></layoutData>
+				</Button>
+			</OverflowToolbar>
+		</footer>
+				</Page>
+		</pages>
+	</App>
+</mvc:View>

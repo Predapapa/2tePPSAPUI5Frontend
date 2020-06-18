@@ -120,6 +120,11 @@
 				"name": "ausbilderView",
 				"pattern": "ausbilder",
 				"target": ["TargetAusbilderView"]
+				},
+			{
+				"name": "studentFormView",
+				"pattern": "studentFormView/{iuser}",
+				"target": ["TargetStudentFormView"]
 				}],
 			"targets": {
 				"TargetStartView": {
@@ -145,8 +150,14 @@
 					"clearControlAggregation": false,
 					"viewId": "AusbilderView",
 					"viewName": "AusbilderView"
+				},
+				"TargetStudentFormView": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "StudentFormView",
+					"viewName": "StudentFormView"
 				}
-			}
 		}
 	}
-}
+}}
