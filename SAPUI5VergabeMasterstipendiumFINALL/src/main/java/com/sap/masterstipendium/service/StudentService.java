@@ -36,7 +36,8 @@ public class StudentService {
 		return studentRepository.getAll();
 	}
 	
-	public List<Student> getAllStudentsFromTrainer(String trainer) {
+	public List<Student> getAllStudentsFromTrainer(String fname, String lname) {
+		String trainer = fname + " " + lname;
 		return studentRepository.getAllStudentsFromTrainer(trainer);
 	}
 	

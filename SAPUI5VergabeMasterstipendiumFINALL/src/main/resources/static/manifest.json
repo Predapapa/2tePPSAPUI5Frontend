@@ -15,7 +15,7 @@
 		},
 		"dataSources": {
    			"studentDataSource": {
-      			"uri": "api/v1/get/Jürgen Traugott",
+      			"uri": "api/v1/get/Jürgen/Traugott",
       			"type": "JSON",
       			"settings": {
       }
