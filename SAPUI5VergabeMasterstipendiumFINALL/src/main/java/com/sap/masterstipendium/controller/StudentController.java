@@ -29,9 +29,9 @@ public class StudentController {
 	
 	public StudentController(StudentService studentService) {
 		this.studentService = studentService;
-		studentService.createStudent(new Student("I517458", "Nadine", "Kafumann", "WI", "WI 2019 RV", "Jürgen Traugott", "ppfeedback", "cpracticalphase", 0, "cengagement", ""));
-		studentService.createStudent(new Student("I567852", "Uwe", "Baumgartner", "WI", "WI 2019 RV", "Jürgen Traugott", "ppfeedback", "cpracticalphase", 0, "cengagement", ""));
-		studentService.createStudent(new Student("I567854", "Bernd", "Mehler", "WI", "WI 2019 RV", "Jürgen Traugott", "ppfeedback", "cpracticalphase", 0, "cengagement", ""));
+		studentService.createStudent(new Student("I517458", "Nadine", "Kafumann", "WI", "WI 2019 RV", "Juergen Traugott", "ppfeedback", "cpracticalphase", 0, "cengagement", ""));
+		studentService.createStudent(new Student("I567852", "Uwe", "Baumgartner", "WI", "WI 2019 RV", "Juergen Traugott", "ppfeedback", "cpracticalphase", 0, "cengagement", ""));
+		studentService.createStudent(new Student("I567854", "Bernd", "Mehler", "WI", "WI 2019 RV", "Juergen Traugott", "ppfeedback", "cpracticalphase", 0, "cengagement", ""));
 	}
 	
 	

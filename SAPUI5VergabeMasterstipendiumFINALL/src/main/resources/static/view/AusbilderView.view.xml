@@ -1,0 +1,23 @@
+<mvc:View controllerName="com.sap.masterstipendium.SAPUI5VergabeMasterstipendiumFrontEnd.controller.AusbilderView" 
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" 
+	xmlns="sap.m" 
+	xmlns:l="sap.ui.layout">
+	<App>
+				<Page id="page3" title="Übersicht für Ausbilder" showNavButton="true" navButtonPress=".onNavBack">
+					<content>
+							<List items="{/}">
+								<ObjectListItem
+								type="Active"
+								press=".sPress"
+								title="{iuser}"
+								icon="sap-icon://employee">
+											<ObjectAttribute text="{fname} {lname}"/>
+											<ObjectAttribute text="Kurs: {course}"/>
+											<ObjectAttribute text="Ausbilder: {trainer}"/>
+								</ObjectListItem>
+							</List>
+					</content>
+				</Page>
+	</App>
+</mvc:View>

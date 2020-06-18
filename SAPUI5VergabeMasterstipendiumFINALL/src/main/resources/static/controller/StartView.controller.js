@@ -11,6 +11,11 @@ sap.ui.define([
 		press : function(evt) {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.navTo("ausbildungsabteilungView");
+		},
+		
+		press2 : function(evt1) {
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("ausbilderView");
 		}
 		
 		

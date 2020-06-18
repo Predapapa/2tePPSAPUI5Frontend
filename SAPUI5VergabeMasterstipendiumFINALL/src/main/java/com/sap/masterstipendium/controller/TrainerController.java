@@ -28,7 +28,7 @@ public class TrainerController {
 	
 	public TrainerController(TrainerService trainerService) {
 		this.trainerService = trainerService;
-		trainerService.createTrainer(new Trainer("D458025", "Jürgen", "Traugott"));
+		trainerService.createTrainer(new Trainer("D458025", "Juergen", "Traugott"));
 		trainerService.createTrainer(new Trainer("D458026", "Niklas", "Busch"));
 		trainerService.createTrainer(new Trainer("D458027", "Robert", "Theissen"));
 	}

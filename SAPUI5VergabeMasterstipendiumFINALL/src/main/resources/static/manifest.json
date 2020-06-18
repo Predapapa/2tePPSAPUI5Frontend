@@ -15,7 +15,7 @@
 		},
 		"dataSources": {
    			"studentDataSource": {
-      			"uri": "api/v1/get/Jürgen/Traugott",
+      			"uri": "/api/v1/get/Juergen/Traugott",
       			"type": "JSON",
       			"settings": {
       }
@@ -115,6 +115,11 @@
 			{	"name": "wistudentanlegenView",
 				"pattern": "WiStudent",
 				"target": ["TargetWiStudentAnlegenView"]
+				},
+			{
+				"name": "ausbilderView",
+				"pattern": "ausbilder",
+				"target": ["TargetAusbilderView"]
 				}],
 			"targets": {
 				"TargetStartView": {
@@ -133,6 +138,13 @@
 					"clearControlAggregation": false,
 					"viewId": "WiStudentAnlegenView",
 					"viewName": "WiStudentAnlegenView"
+				},
+				"TargetAusbilderView": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "AusbilderView",
+					"viewName": "AusbilderView"
 				}
 			}
 		}
