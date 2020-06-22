@@ -10,7 +10,7 @@
 				<Page id="page2" title="Informationen ergänzen und Leistung beurteilen" showNavButton="true" navButtonPress=".onNavBack">
 					<content>
 						
-						<ObjectHeader 	binding="{/}"  icon="sap-icon://employee" intro="{iuser}" title="{fname} {lname}" class="sapUiResponsivePadding--header" >
+						<ObjectHeader 	binding="{/}"   intro="{iuser}" title="{fname} {lname}" class="sapUiResponsivePadding--header" >
 		
 							<ObjectAttribute text="Studiengang: {cofStudy}" />
 							<ObjectAttribute text="Kurs: {course}" />
