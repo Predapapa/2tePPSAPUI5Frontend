@@ -48,9 +48,9 @@ public class StudentController {
 		return new ResponseEntity<Student>(studentService.getStudentByUsername(iuser), HttpStatus.OK);
 	}
 	// Get Student By Trainer
-	@GetMapping(path = "/get/{fname}/{lname}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<List<Student>> getStudentByTrainer(@PathVariable(name = "fname") String fname, @PathVariable(name = "lname") String lname) {
-		return new ResponseEntity<List<Student>>(studentService.getAllStudentsFromTrainer(fname,lname), HttpStatus.OK);
+	@GetMapping(path = "/get/{trainer}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<List<Student>> getStudentByTrainer(@PathVariable(name = "trainer") String trainer) {
+		return new ResponseEntity<List<Student>>(studentService.getAllStudentsFromTrainer(trainer), HttpStatus.OK);
 	}
 	
 	// Get All Students

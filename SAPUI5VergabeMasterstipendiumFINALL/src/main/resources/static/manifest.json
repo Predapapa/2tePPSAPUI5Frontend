@@ -15,7 +15,7 @@
 		},
 		"dataSources": {
    			"studentDataSource": {
-      			"uri": "/api/v1/get/Juergen/Traugott",
+      			"uri": "/api/v1/get/{trainer}",
       			"type": "JSON",
       			"settings": {
       }
@@ -67,13 +67,7 @@
 			"cozy": true
 		},
 		"models": {
-			"i18n": {
-				"type": "sap.ui.model.resource.ResourceModel",
-				"settings": {
-					"bundleName": "com.sap.masterstipendium.SAPUI5VergabeMasterstipendiumFrontEnd.i18n.i18n"
-				}
-			},
-				"": {
+				"studentsFromTrainer": {
 				"dataSource" : "studentDataSource",
 				"settings": {
 					"defaultBindingMode" : "TwoWay"

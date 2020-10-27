@@ -24,7 +24,7 @@ public class StudentService {
 		if (!studentRepository.existsStudentByIuser(student.getIuser())) {
 			studentRepository.save(student);
 		} else {
-			throw new EntityExistsException("Could not save Student entity with username " + student.getIuser() +" . An entity with that usernname already exists.");
+			throw new EntityExistsException("Could not create Student entity because it already exists.");
 		}
 	}
 	
@@ -36,10 +36,13 @@ public class StudentService {
 		return studentRepository.getAll();
 	}
 	
-	public List<Student> getAllStudentsFromTrainer(String fname, String lname) {
-		String trainer = fname + " " + lname;
+	public List<Student> getAllStudentsFromTrainer(String trainer) {
+		
 		return studentRepository.getAllStudentsFromTrainer(trainer);
 	}
+	
+	
+	
 	
 	public List<Student> getAllStudendsFromCofStudy(String cofStudy){
 		return studentRepository.getAllStudentsFromCofStudy(cofStudy);
